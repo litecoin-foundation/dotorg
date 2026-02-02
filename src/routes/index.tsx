@@ -9,7 +9,7 @@ const Index = () => {
       <div className="max-w-2xl mx-auto text-center space-y-8 litecoin-bg rounded-2xl p-8 border border-light-grey/20">
         {/* Title */}
         <div className="space-y-4">
-          <h1 className="text-5xl font-bold text-gradient">Litecoin Core</h1>
+          <h1 className="text-5xl font-bold text-light-grey">Litecoin Core</h1>
           <p className="text-xl text-light-grey/90 max-w-md mx-auto leading-relaxed">
             The official Litecoin node software for secure transactions and
             network participation
@@ -52,14 +52,15 @@ const Index = () => {
               Buy Litecoin
             </a>
             {" • "}
-            Open source software • MIT License •
+            Open source software
+            {" • "}
             <a
-              href="https://github.com/litecoin-project/litecoin"
-              className="text-accent hover:underline ml-1"
+              href="https://litecoin.com/donate"
               target="_blank"
               rel="noopener noreferrer"
+              className="text-accent hover:underline"
             >
-              View source code
+              Donate to Development
             </a>
           </p>
         </div>

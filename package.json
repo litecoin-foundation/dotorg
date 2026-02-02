@@ -13,6 +13,7 @@
     "@radix-ui/react-collapsible": "^1.1.12",
     "@radix-ui/react-popover": "^1.1.15",
     "@radix-ui/react-slot": "^1.2.4",
+    "@radix-ui/react-toast": "^1.2.15",
     "@tailwindcss/vite": "^4.1.18",
     "@tanstack/react-router": "^1.157.18",
     "@tanstack/router-plugin": "^1.157.18",
