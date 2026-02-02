@@ -1,68 +1,119 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import "tailwindcss";
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@theme {
+  /* Litecoin Color Palette */
+  --color-light-grey: hsl(192 22% 82%); /* #c6d3d6 */
+  --color-tomato: hsl(9 87% 61%); /* #f46748 */
+  --color-pink: hsl(333 100% 66%); /* #ff5795 */
+  --color-tomato-2: hsl(9 96% 60%); /* #fc5c39 */
+  --color-black: hsl(0 0% 13%); /* #222 */
+  --color-navy: hsl(276 27% 20%); /* #311f41 */
+  --color-misty-rose: hsl(16 65% 86%); /* #f3ccc4 */
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  /* Theme mappings */
+  --color-background: var(--color-black);
+  --color-foreground: var(--color-light-grey);
+  --color-card: var(--color-navy);
+  --color-card-foreground: var(--color-light-grey);
+  --color-popover: var(--color-navy);
+  --color-popover-foreground: var(--color-light-grey);
+  --color-primary: var(--color-tomato);
+  --color-primary-foreground: hsl(0 0% 100%);
+  --color-secondary: var(--color-light-grey);
+  --color-secondary-foreground: var(--color-black);
+  --color-muted: var(--color-navy);
+  --color-muted-foreground: var(--color-light-grey);
+  --color-accent: var(--color-pink);
+  --color-accent-foreground: hsl(0 0% 100%);
+  --color-destructive: var(--color-tomato-2);
+  --color-destructive-foreground: hsl(0 0% 100%);
+  --color-border: var(--color-navy);
+  --color-input: var(--color-navy);
+  --color-ring: var(--color-tomato);
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+  /* Sidebar colors */
+  --color-sidebar-background: hsl(0 0% 98%);
+  --color-sidebar-foreground: hsl(240 5.3% 26.1%);
+  --color-sidebar-primary: hsl(240 5.9% 10%);
+  --color-sidebar-primary-foreground: hsl(0 0% 98%);
+  --color-sidebar-accent: hsl(240 4.8% 95.9%);
+  --color-sidebar-accent-foreground: hsl(240 5.9% 10%);
+  --color-sidebar-border: hsl(220 13% 91%);
+  --color-sidebar-ring: hsl(217.2 91.2% 59.8%);
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  /* Border radius */
+  --radius: 0.75rem;
 }
 
-@media (prefers-color-scheme: light) {
+@layer base {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(9 87% 61%),
+      hsl(333 100% 66%)
+    );
+    --gradient-bg: linear-gradient(
+      135deg,
+      hsl(220 40% 8%),
+      hsl(240 30% 15%),
+      hsl(0 60% 25%)
+    );
+    --gradient-subtle: linear-gradient(
+      135deg,
+      hsl(16 65% 86%),
+      hsl(192 22% 82%)
+    );
+
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(9 87% 61% / 0.3);
+    --shadow-soft: 0 4px 20px hsl(0 0% 13% / 0.25);
   }
-  a:hover {
-    color: #747bff;
+
+  .light {
+    --color-background: hsl(0 0% 98%);
+    --color-foreground: var(--color-black);
+    --color-card: hsl(0 0% 100%);
+    --color-card-foreground: var(--color-black);
+    --color-primary: var(--color-tomato);
+    --color-secondary: var(--color-light-grey);
+    --color-muted: var(--color-misty-rose);
+    --color-accent: var(--color-pink);
   }
-  button {
-    background-color: #f9f9f9;
+}
+
+@layer base {
+  * {
+    border-color: theme(colors.border);
+  }
+
+  body {
+    background-color: theme(colors.background);
+    color: theme(colors.foreground);
+    font-family: "Space Grotesk", sans-serif;
+    background-image: url("bgblack.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+}
+
+@layer utilities {
+  .litecoin-bg {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+  }
+
+  .glow-effect {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
