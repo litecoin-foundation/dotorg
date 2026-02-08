@@ -1,9 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
 
 import SocialLinks from "@/components/SocialLinks";
 import DownloadSection from "@/components/DownloadSection";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+
+type NodeType = "full-node" | "light-client";
 
 const Index = () => {
+  const [nodeType, setNodeType] = useState<NodeType>("full-node");
+
   return (
     <div className="min-h-screen flex items-center justify-center p-4 py-8">
       <div className="max-w-2xl mx-auto text-center space-y-8 litecoin-bg rounded-2xl p-8 border border-light-grey/20">
@@ -27,16 +33,46 @@ const Index = () => {
           </a>
         </div>
 
-        {/* What is Litecoin Section */}
-        <div className="space-y-4 border-t border-navy/30 pt-6">
-          <p className="text-light-grey/80 max-w-lg mx-auto leading-relaxed">
-            The official Litecoin node software for secure transactions and
-            network participation
-          </p>
+        {/* Node Section */}
+        <div className="space-y-4 border-t border-navy/30 pt-6 max-w-lg mx-auto">
+          <Tabs
+            value={nodeType}
+            onValueChange={(value) => setNodeType(value as NodeType)}
+            className="w-full"
+          >
+            <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 bg-navy/50">
+              <TabsTrigger
+                value="full-node"
+                className="data-[state=active]:bg-accent/20 data-[state=active]:text-accent"
+              >
+                Litecoin Core
+                <span className="ml-2 text-xs opacity-70">(Advanced)</span>
+              </TabsTrigger>
+              <TabsTrigger
+                value="light-client"
+                className="data-[state=active]:bg-accent/20 data-[state=active]:text-accent"
+              >
+                Electrum-LTC
+                <span className="ml-2 text-xs opacity-70">(Simple)</span>
+              </TabsTrigger>
+            </TabsList>
+
+            <TabsContent value="full-node" className="mt-4 min-h-14 w-full">
+              <p className="text-light-grey/80 leading-relaxed w-full">
+                Full node wallet that downloads the entire blockchain for maximum security and network support.
+              </p>
+            </TabsContent>
+
+            <TabsContent value="light-client" className="mt-4 min-h-14 w-full">
+              <p className="text-light-grey/80 leading-relaxed w-full">
+                Lightweight wallet that syncs quickly by trusting external servers instead of the full blockchain.
+              </p>
+            </TabsContent>
+          </Tabs>
         </div>
 
         {/* Download Section */}
-        <DownloadSection />
+        <DownloadSection nodeType={nodeType} />
 
         {/* Social Links */}
         <div className="pt-4">

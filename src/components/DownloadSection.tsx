@@ -23,11 +23,17 @@ interface DownloadInfo {
   url: string;
 }
 
-const DownloadSection = () => {
+type NodeType = "full-node" | "light-client";
+
+interface DownloadSectionProps {
+  nodeType: NodeType;
+}
+
+const DownloadSection = ({ nodeType }: DownloadSectionProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const { toast } = useToast();
 
-  const allDownloads: DownloadInfo[] = [
+  const litecoinCoreDownloads: DownloadInfo[] = [
     {
       version: "27.1",
       platform: "Windows 64-bit",
@@ -65,6 +71,38 @@ const DownloadSection = () => {
     },
   ];
 
+  const electrumLTCDownloads: DownloadInfo[] = [
+    {
+      version: "4.2.2.1",
+      platform: "Windows 64-bit",
+      size: "28.5 MB",
+      filename: "electrum-ltc-4.2.2.1-setup.exe",
+      checksum:
+        "e1f2a3b4c5d6e7f8d89a5b5a1d5c8e4f2a3b8c7d6e9f0a1b2c3d4e5f6a7b8c9d0",
+      url: "https://electrum-ltc.org/download/electrum-ltc-4.2.2.1-setup.exe",
+    },
+    {
+      version: "4.2.2.1",
+      platform: "macOS",
+      size: "26.7 MB",
+      filename: "electrum-ltc-4.2.2.1.dmg",
+      checksum:
+        "f2a3b4c5d6e7f8d89a5b5a1d5c8e4f2a3b8c7d6e9f0a1b2c3d4e5f6a7b8c9d0e1",
+      url: "https://electrum-ltc.org/download/electrum-ltc-4.2.2.1.dmg",
+    },
+    {
+      version: "4.2.2.1",
+      platform: "Linux 64-bit",
+      size: "27.2 MB",
+      filename: "electrum-ltc-4.2.2.1-x86_64.AppImage",
+      checksum:
+        "a3b4c5d6e7f8d89a5b5a1d5c8e4f2a3b8c7d6e9f0a1b2c3d4e5f6a7b8c9d0e1f2",
+      url: "https://electrum-ltc.org/download/electrum-ltc-4.2.2.1-x86_64.AppImage",
+    },
+  ];
+
+  const allDownloads = nodeType === "full-node" ? litecoinCoreDownloads : electrumLTCDownloads;
+
   // Detect user's OS
   const detectOS = (): string => {
     const userAgent = window.navigator.userAgent.toLowerCase();
@@ -99,7 +137,7 @@ const DownloadSection = () => {
 
     setPrimaryDownload(detected);
     setOtherDownloads(others);
-  }, []);
+  }, [nodeType, allDownloads]);
 
   const copyChecksum = (checksum: string) => {
     navigator.clipboard.writeText(checksum);
@@ -108,6 +146,10 @@ const DownloadSection = () => {
       description: "SHA256 checksum copied to clipboard",
     });
   };
+
+  const downloadButtonText = nodeType === "full-node"
+    ? `Download Litecoin Core ${primaryDownload.version}`
+    : `Download Electrum-LTC ${primaryDownload.version}`;
 
   return (
     <div className="space-y-6">
@@ -119,7 +161,7 @@ const DownloadSection = () => {
             className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold glow-effect transition-all duration-300 hover:scale-105"
           >
             <Download className="mr-2 h-5 w-5" />
-            Download Litecoin Core {primaryDownload.version}
+            {downloadButtonText}
           </Button>
         </a>
 
