@@ -4,6 +4,7 @@ import { useState } from "react";
 import SocialLinks from "@/components/SocialLinks";
 import DownloadSection from "@/components/DownloadSection";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import coinImage from "@/assets/coin.png";
 
 type NodeType = "full-node" | "light-client";
 
@@ -16,7 +17,7 @@ const Index = () => {
         {/* Title */}
         <div className="space-y-4">
           <div className="flex items-center justify-center gap-4">
-            <img src="/coin.png" alt="Litecoin Logo" className="w-16 h-16" />
+            <img src={coinImage} alt="Litecoin Logo" className="w-16 h-16" />
             <h1 className="text-5xl font-bold text-light-grey">Litecoin</h1>
           </div>
           <p className="text-xl text-light-grey/90 max-w-md mx-auto leading-relaxed">

@@ -91,7 +91,7 @@
     background-color: theme(colors.background);
     color: theme(colors.foreground);
     font-family: "Space Grotesk", sans-serif;
-    background-image: url("bgblack.jpg");
+    background-image: url("./assets/bgblack.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
