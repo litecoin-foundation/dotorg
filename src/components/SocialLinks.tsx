@@ -1,22 +1,33 @@
-import { Github, Twitter, MessageCircle, Globe } from "lucide-react";
+import { Globe } from "lucide-react";
+import {
+  IconBrandGithub,
+  IconBrandX,
+  IconBrandDiscord,
+  IconMessages
+} from "@tabler/icons-react";
 import { Button } from "@/components/ui/button";
 
 const SocialLinks = () => {
   const socialLinks = [
     {
-      icon: Github,
+      icon: IconBrandGithub,
       href: "https://github.com/litecoin-project/litecoin",
       label: "GitHub"
     },
     {
-      icon: Twitter,
+      icon: IconBrandX,
       href: "https://twitter.com/litecoin",
       label: "Twitter"
     },
     {
-      icon: MessageCircle,
+      icon: IconBrandDiscord,
       href: "https://discord.gg/litecoin",
       label: "Discord"
+    },
+    {
+      icon: IconMessages,
+      href: "https://litecointalk.io",
+      label: "Forum"
     },
     {
       icon: Globe,

@@ -15,6 +15,7 @@
     "@radix-ui/react-slot": "^1.2.4",
     "@radix-ui/react-tabs": "^1.1.13",
     "@radix-ui/react-toast": "^1.2.15",
+    "@tabler/icons-react": "^3.41.1",
     "@tailwindcss/vite": "^4.1.18",
     "@tanstack/react-router": "^1.157.18",
     "@tanstack/router-plugin": "^1.157.18",
