@@ -3,13 +3,27 @@ import { useState } from "react";
 
 import SocialLinks from "@/components/SocialLinks";
 import DownloadSection from "@/components/DownloadSection";
+import MobileDownloadSection from "@/components/MobileDownloadSection";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import coinImage from "@/assets/coin.png";
 
 type NodeType = "full-node" | "light-client";
 
+const detectMobile = (): boolean => {
+  const ua = navigator.userAgent;
+  if (/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(ua)) {
+    return true;
+  }
+  // iPadOS 13+ reports as Mac; disambiguate via touch points.
+  if (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1) {
+    return true;
+  }
+  return false;
+};
+
 const Index = () => {
   const [nodeType, setNodeType] = useState<NodeType>("full-node");
+  const [isMobile] = useState(() => detectMobile());
 
   return (
     <div className="min-h-screen flex items-center justify-center p-4 py-8">
@@ -34,46 +48,56 @@ const Index = () => {
           </a>
         </div>
 
-        {/* Node Section */}
+        {/* Wallet Section */}
         <div className="space-y-4 border-t border-navy/30 pt-6 max-w-lg mx-auto">
-          <Tabs
-            value={nodeType}
-            onValueChange={(value) => setNodeType(value as NodeType)}
-            className="w-full"
-          >
-            <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 bg-navy/50">
-              <TabsTrigger
-                value="full-node"
-                className="data-[state=active]:bg-accent/20 data-[state=active]:text-accent"
-              >
-                Litecoin Core
-                <span className="ml-2 text-xs opacity-70">(Advanced)</span>
-              </TabsTrigger>
-              <TabsTrigger
-                value="light-client"
-                className="data-[state=active]:bg-accent/20 data-[state=active]:text-accent"
-              >
-                Electrum-LTC
-                <span className="ml-2 text-xs opacity-70">(Simple)</span>
-              </TabsTrigger>
-            </TabsList>
+          {isMobile ? (
+            <p className="text-light-grey/80 leading-relaxed">
+              Nexus Wallet is a simple to use mobile wallet for Litecoin.
+            </p>
+          ) : (
+            <Tabs
+              value={nodeType}
+              onValueChange={(value) => setNodeType(value as NodeType)}
+              className="w-full"
+            >
+              <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 bg-navy/50">
+                <TabsTrigger
+                  value="full-node"
+                  className="data-[state=active]:bg-accent/20 data-[state=active]:text-accent"
+                >
+                  Litecoin Core
+                  <span className="ml-2 text-xs opacity-70">(Advanced)</span>
+                </TabsTrigger>
+                <TabsTrigger
+                  value="light-client"
+                  className="data-[state=active]:bg-accent/20 data-[state=active]:text-accent"
+                >
+                  Electrum-LTC
+                  <span className="ml-2 text-xs opacity-70">(Simple)</span>
+                </TabsTrigger>
+              </TabsList>
 
-            <TabsContent value="full-node" className="mt-4 min-h-14 w-full">
-              <p className="text-light-grey/80 leading-relaxed w-full">
-                Full node wallet that downloads the entire blockchain for maximum security and network support.
-              </p>
-            </TabsContent>
+              <TabsContent value="full-node" className="mt-4 min-h-14 w-full">
+                <p className="text-light-grey/80 leading-relaxed w-full">
+                  Full node wallet that downloads the entire blockchain for maximum security and network support.
+                </p>
+              </TabsContent>
 
-            <TabsContent value="light-client" className="mt-4 min-h-14 w-full">
-              <p className="text-light-grey/80 leading-relaxed w-full">
-                Lightweight wallet that syncs quickly by trusting external servers instead of the full blockchain.
-              </p>
-            </TabsContent>
-          </Tabs>
+              <TabsContent value="light-client" className="mt-4 min-h-14 w-full">
+                <p className="text-light-grey/80 leading-relaxed w-full">
+                  Lightweight wallet that syncs quickly by trusting external servers instead of the full blockchain.
+                </p>
+              </TabsContent>
+            </Tabs>
+          )}
         </div>
 
         {/* Download Section */}
-        <DownloadSection nodeType={nodeType} />
+        {isMobile ? (
+          <MobileDownloadSection />
+        ) : (
+          <DownloadSection nodeType={nodeType} />
+        )}
 
         {/* Social Links */}
         <div className="pt-4">
