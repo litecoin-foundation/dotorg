@@ -35,40 +35,40 @@ const DownloadSection = ({ nodeType }: DownloadSectionProps) => {
 
   const litecoinCoreDownloads: DownloadInfo[] = [
     {
-      version: "0.21.5.4",
+      version: "0.21.5.5",
       platform: "Windows 64-bit",
-      size: "18.6 MB",
-      filename: "litecoin-0.21.5.4-win64-setup.exe",
+      size: "19.1 MB",
+      filename: "litecoin-0.21.5.5-win64-setup.exe",
       checksum:
-        "023b0ff0cdec7d440fb62d95aae4bf7b7c892242372d33de10e2f889c94c15ad",
-      url: "https://download.litecoin.org/litecoin-0.21.5.4/litecoin-0.21.5.4-win64-setup.exe",
+        "9d222bf96eed1c209e4f57b278f11d9a5266fb2c6caedc23c4a8f4b421288c70",
+      url: "https://download.litecoin.org/litecoin-0.21.5.5/win/litecoin-0.21.5.5-win64-setup.exe",
     },
     {
-      version: "0.21.5.4",
+      version: "0.21.5.5",
       platform: "macOS",
-      size: "14.2 MB",
-      filename: "litecoin-0.21.5.4-osx.dmg",
+      size: "14.5 MB",
+      filename: "litecoin-0.21.5.5-osx.dmg",
       checksum:
-        "c6d21013c41d255e0dd2b2bd2f69395ef7d1ba3e1cfcad41cbf39a4f97078526",
-      url: "https://download.litecoin.org/litecoin-0.21.5.4/litecoin-0.21.5.4-osx.dmg",
+        "f522e6f93a48a884a0a536e1f1785b5daaed21abcd5b8c46cd9c9046d7e727d9",
+      url: "https://download.litecoin.org/litecoin-0.21.5.5/osx/litecoin-0.21.5.5-osx.dmg",
     },
     {
-      version: "0.21.5.4",
+      version: "0.21.5.5",
       platform: "Linux 64-bit",
-      size: "35.9 MB",
-      filename: "litecoin-0.21.5.4-x86_64-linux-gnu.tar.gz",
+      size: "36.8 MB",
+      filename: "litecoin-0.21.5.5-x86_64-linux-gnu.tar.gz",
       checksum:
-        "91621306bafcadeebc266c264c95576536b5b2658e0ba03b05262ed4b9ab611f",
-      url: "https://download.litecoin.org/litecoin-0.21.5.4/litecoin-0.21.5.4-x86_64-linux-gnu.tar.gz",
+        "623410d4f2695a68aa71332ae0672fee19276f41c1c63a531f97e24a50edde14",
+      url: "https://download.litecoin.org/litecoin-0.21.5.5/linux/litecoin-0.21.5.5-x86_64-linux-gnu.tar.gz",
     },
     {
-      version: "0.21.5.4",
+      version: "0.21.5.5",
       platform: "Linux ARM64",
-      size: "34.6 MB",
-      filename: "litecoin-0.21.5.4-aarch64-linux-gnu.tar.gz",
+      size: "35.5 MB",
+      filename: "litecoin-0.21.5.5-aarch64-linux-gnu.tar.gz",
       checksum:
-        "f0213853817d0ba7854aa718dc43bf991aba80a7db8b47969ae979dc083acce2",
-      url: "https://download.litecoin.org/litecoin-0.21.5.4/litecoin-0.21.5.4-aarch64-linux-gnu.tar.gz",
+        "3561a1f0ff8db311e4f18553020f625d5547f5bfe9eade8671b9c63aa5f7462a",
+      url: "https://download.litecoin.org/litecoin-0.21.5.5/linux/litecoin-0.21.5.5-aarch64-linux-gnu.tar.gz",
     },
   ];
 
