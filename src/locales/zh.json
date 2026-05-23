@@ -16,5 +16,8 @@
   "checksum.copiedDesc": "SHA256 校验值已复制到剪贴板",
   "footer.buy": "购买 Litecoin",
   "footer.openSource": "开源软件",
-  "footer.donate": "捐助开发"
+  "footer.donate": "捐助开发",
+  "mobile.nexusDescription": "使用 Nexus Wallet 买卖和支付 Litecoin。",
+  "download.nexus.ios": "Download for iOS",
+  "download.nexus.android": "Download for Android"
 }

@@ -16,5 +16,8 @@
   "checksum.copiedDesc": "SHA256-tarkistussumma kopioitu leikepöydälle",
   "footer.buy": "Osta Litecoinia",
   "footer.openSource": "Avoimen lähdekoodin ohjelmisto",
-  "footer.donate": "Lahjoita kehitykseen"
+  "footer.donate": "Lahjoita kehitykseen",
+  "mobile.nexusDescription": "Osta, myy ja maksa Litecoinilla Nexus Walletin avulla.",
+  "download.nexus.ios": "Download for iOS",
+  "download.nexus.android": "Download for Android"
 }

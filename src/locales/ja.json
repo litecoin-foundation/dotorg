@@ -16,5 +16,8 @@
   "checksum.copiedDesc": "SHA256 チェックサムをクリップボードにコピーしました",
   "footer.buy": "Litecoin を購入",
   "footer.openSource": "オープンソースソフトウェア",
-  "footer.donate": "開発に寄付する"
+  "footer.donate": "開発に寄付する",
+  "mobile.nexusDescription": "Nexus WalletでLitecoinの売買・決済を。",
+  "download.nexus.ios": "Download for iOS",
+  "download.nexus.android": "Download for Android"
 }

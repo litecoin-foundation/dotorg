@@ -16,5 +16,8 @@
   "checksum.copiedDesc": "Kontrolna vsota SHA256 kopirana v odložišče",
   "footer.buy": "Kupi Litecoin",
   "footer.openSource": "Odprtokodna programska oprema",
-  "footer.donate": "Doniraj za razvoj"
+  "footer.donate": "Doniraj za razvoj",
+  "mobile.nexusDescription": "Kupujte, prodajajte in plačujte z Litecoinom z Nexus Wallet.",
+  "download.nexus.ios": "Download for iOS",
+  "download.nexus.android": "Download for Android"
 }

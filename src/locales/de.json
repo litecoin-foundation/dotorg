@@ -16,5 +16,8 @@
   "checksum.copiedDesc": "SHA256-Checksum wurde in die Zwischenablage kopiert",
   "footer.buy": "Litecoin kaufen",
   "footer.openSource": "Open-Source-Software",
-  "footer.donate": "Für die Entwicklung spenden"
+  "footer.donate": "Für die Entwicklung spenden",
+  "mobile.nexusDescription": "Kaufen, verkaufen und bezahlen Sie mit Litecoin über Nexus Wallet.",
+  "download.nexus.ios": "Download for iOS",
+  "download.nexus.android": "Download for Android"
 }

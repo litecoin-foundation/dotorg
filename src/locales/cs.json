@@ -16,5 +16,8 @@
   "checksum.copiedDesc": "SHA256 kontrolní součet zkopírován do schránky",
   "footer.buy": "Koupit Litecoin",
   "footer.openSource": "Open source software",
-  "footer.donate": "Přispět na vývoj"
+  "footer.donate": "Přispět na vývoj",
+  "mobile.nexusDescription": "Kupujte, prodávejte a plaťte Litecoinem pomocí Nexus Wallet.",
+  "download.nexus.ios": "Download for iOS",
+  "download.nexus.android": "Download for Android"
 }

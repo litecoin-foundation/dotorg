@@ -16,5 +16,8 @@
   "checksum.copiedDesc": "SHA256-kontrollsumma kopierad till urklipp",
   "footer.buy": "Köp Litecoin",
   "footer.openSource": "Programvara med öppen källkod",
-  "footer.donate": "Donera till utveckling"
+  "footer.donate": "Donera till utveckling",
+  "mobile.nexusDescription": "Köp, sälj och betala med Litecoin med Nexus Wallet.",
+  "download.nexus.ios": "Download for iOS",
+  "download.nexus.android": "Download for Android"
 }

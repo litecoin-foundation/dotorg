@@ -16,5 +16,8 @@
   "checksum.copiedDesc": "Το SHA256 checksum αντιγράφηκε στο πρόχειρο",
   "footer.buy": "Αγορά Litecoin",
   "footer.openSource": "Λογισμικό ανοιχτού κώδικα",
-  "footer.donate": "Δωρεά για την ανάπτυξη"
+  "footer.donate": "Δωρεά για την ανάπτυξη",
+  "mobile.nexusDescription": "Αγοράστε, πουλήστε και πληρώστε με Litecoin μέσω Nexus Wallet.",
+  "download.nexus.ios": "Download for iOS",
+  "download.nexus.android": "Download for Android"
 }

@@ -16,5 +16,8 @@
   "checksum.copiedDesc": "SHA256 체크섬이 클립보드에 복사되었습니다",
   "footer.buy": "Litecoin 구매",
   "footer.openSource": "오픈 소스 소프트웨어",
-  "footer.donate": "개발에 기부하기"
+  "footer.donate": "개발에 기부하기",
+  "mobile.nexusDescription": "Nexus Wallet로 라이트코인을 사고팔고 결제하세요.",
+  "download.nexus.ios": "Download for iOS",
+  "download.nexus.android": "Download for Android"
 }

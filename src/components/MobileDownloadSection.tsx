@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -13,62 +13,19 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { Download, ChevronDown, Shield, Copy, Info } from "lucide-react";
+import { IconBrandApple, IconBrandAndroid } from "@tabler/icons-react";
 import { useToast } from "@/hooks/use-toast";
-import {
-  litecoinCoreDownloads,
-  electrumLTCDownloads,
-  type DownloadInfo,
-} from "@/data/wallets";
+import { litecoinCoreDownloads } from "@/data/wallets";
 
-type NodeType = "full-node" | "light-client";
+const NEXUS_IOS_URL =
+  "https://apps.apple.com/us/app/nexus-wallet-for-litecoin/id6738978436";
+const NEXUS_ANDROID_URL =
+  "https://play.google.com/store/apps/details?id=com.litecoin.nexus";
 
-interface DownloadSectionProps {
-  nodeType: NodeType;
-}
-
-const DownloadSection = ({ nodeType }: DownloadSectionProps) => {
+const MobileDownloadSection = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const { toast } = useToast();
   const { t } = useTranslation();
-
-  const allDownloads =
-    nodeType === "full-node" ? litecoinCoreDownloads : electrumLTCDownloads;
-
-  // Detect user's OS
-  const detectOS = (): string => {
-    const userAgent = window.navigator.userAgent.toLowerCase();
-    const platform = window.navigator.platform.toLowerCase();
-
-    if (platform.includes("mac")) {
-      return "macOS";
-    } else if (platform.includes("linux")) {
-      // Check if ARM
-      if (userAgent.includes("arm") || userAgent.includes("aarch64")) {
-        return "Linux ARM64";
-      }
-      return "Linux 64-bit";
-    } else if (platform.includes("win")) {
-      return "Windows 64-bit";
-    }
-
-    // Default to Windows
-    return "Windows 64-bit";
-  };
-
-  const [primaryDownload, setPrimaryDownload] = useState<DownloadInfo>(
-    allDownloads[0],
-  );
-  const [otherDownloads, setOtherDownloads] = useState<DownloadInfo[]>([]);
-
-  useEffect(() => {
-    const detectedOS = detectOS();
-    const detected =
-      allDownloads.find((d) => d.platform === detectedOS) || allDownloads[0];
-    const others = allDownloads.filter((d) => d.platform !== detectedOS);
-
-    setPrimaryDownload(detected);
-    setOtherDownloads(others);
-  }, [nodeType, allDownloads]);
 
   const copyChecksum = (checksum: string) => {
     navigator.clipboard.writeText(checksum);
@@ -78,65 +35,37 @@ const DownloadSection = ({ nodeType }: DownloadSectionProps) => {
     });
   };
 
-  const downloadButtonText =
-    nodeType === "full-node"
-      ? t("download.core", { version: primaryDownload.version })
-      : t("download.electrum", { version: primaryDownload.version });
-
   return (
     <div className="space-y-6">
-      {/* Primary Download */}
-      <div className="text-center space-y-4">
-        <a href={primaryDownload.url} download className="inline-block">
+      <div className="flex flex-col items-stretch gap-3 max-w-xs mx-auto">
+        <a
+          href={NEXUS_IOS_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Button
             size="lg"
-            className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold glow-effect transition-all duration-300 hover:scale-105"
+            className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-4 text-base font-semibold glow-effect transition-all duration-300"
           >
-            <Download className="me-2 h-5 w-5" />
-            {downloadButtonText}
+            <IconBrandApple className="me-2 h-5 w-5 shrink-0" />
+            {t("download.nexus.ios")}
           </Button>
         </a>
-
-        <div className="text-sm text-muted-foreground flex items-center justify-center gap-2">
-          <span>
-            {primaryDownload.platform} • {primaryDownload.size}
-          </span>
-          <Popover>
-            <PopoverTrigger asChild>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="h-5 w-5 p-0 text-light-grey/70 hover:text-light-grey hover:bg-navy/50"
-              >
-                <Info className="h-4 w-4" />
-              </Button>
-            </PopoverTrigger>
-            <PopoverContent className="w-80 bg-card/95 border-navy">
-              <div className="space-y-3">
-                <div className="flex items-center gap-2">
-                  <Shield className="h-4 w-4 text-accent" />
-                  <span className="text-sm font-medium">{t("checksum.title")}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <code className="text-xs break-all bg-navy/50 p-2 rounded flex-1">
-                    {primaryDownload.checksum}
-                  </code>
-                  <Button
-                    variant="ghost"
-                    size="icon"
-                    onClick={() => copyChecksum(primaryDownload.checksum)}
-                    className="shrink-0"
-                  >
-                    <Copy className="h-4 w-4" />
-                  </Button>
-                </div>
-              </div>
-            </PopoverContent>
-          </Popover>
-        </div>
+        <a
+          href={NEXUS_ANDROID_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button
+            size="lg"
+            className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-4 text-base font-semibold glow-effect transition-all duration-300"
+          >
+            <IconBrandAndroid className="me-2 h-5 w-5 shrink-0" />
+            {t("download.nexus.android")}
+          </Button>
+        </a>
       </div>
 
-      {/* Other Downloads */}
       <Collapsible open={isExpanded} onOpenChange={setIsExpanded}>
         <CollapsibleTrigger asChild>
           <Button
@@ -150,19 +79,19 @@ const DownloadSection = ({ nodeType }: DownloadSectionProps) => {
           </Button>
         </CollapsibleTrigger>
 
-        <CollapsibleContent className="space-y-4 mt-4">
-          {otherDownloads.map((download) => (
+        <CollapsibleContent className="space-y-3 mt-4">
+          {litecoinCoreDownloads.map((download) => (
             <Card
               key={download.platform}
               className="bg-card/50 border-navy/50 download-card"
             >
-              <CardContent className="p-4">
+              <CardContent className="p-3">
                 <div className="flex items-center justify-between gap-3 text-start">
                   <div className="flex-1 min-w-0">
-                    <h3 className="font-medium text-light-grey text-sm mb-0.5">
+                    <h3 className="font-medium text-light-grey text-sm">
                       {download.platform}
                     </h3>
-                    <p className="text-xs text-muted-foreground truncate">
+                    <p className="text-xs text-muted-foreground truncate mt-0.5">
                       {download.filename}
                     </p>
                     <div className="flex items-center gap-1.5 mt-1">
@@ -174,12 +103,12 @@ const DownloadSection = ({ nodeType }: DownloadSectionProps) => {
                           <Button
                             variant="ghost"
                             size="icon"
-                            className="h-4 w-4 p-0 text-light-grey/70 hover:text-light-grey hover:bg-navy/50"
+                            className="h-4 w-4 p-0 text-light-grey/70 hover:text-light-grey hover:bg-navy/50 shrink-0"
                           >
                             <Info className="h-3 w-3" />
                           </Button>
                         </PopoverTrigger>
-                        <PopoverContent className="w-80 bg-card/95 border-navy">
+                        <PopoverContent className="w-[calc(100vw-3rem)] max-w-sm bg-card/95 border-navy">
                           <div className="space-y-3">
                             <div className="flex items-center gap-2">
                               <Shield className="h-4 w-4 text-accent" />
@@ -225,4 +154,4 @@ const DownloadSection = ({ nodeType }: DownloadSectionProps) => {
   );
 };
 
-export default DownloadSection;
+export default MobileDownloadSection;

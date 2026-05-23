@@ -16,5 +16,8 @@
   "checksum.copiedDesc": "Checksum SHA256 disalin ke papan klip",
   "footer.buy": "Beli Litecoin",
   "footer.openSource": "Perangkat lunak sumber terbuka",
-  "footer.donate": "Donasi untuk Pengembangan"
+  "footer.donate": "Donasi untuk Pengembangan",
+  "mobile.nexusDescription": "Beli, jual, dan bayar dengan Litecoin menggunakan Nexus Wallet.",
+  "download.nexus.ios": "Download for iOS",
+  "download.nexus.android": "Download for Android"
 }

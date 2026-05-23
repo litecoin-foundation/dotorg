@@ -16,5 +16,8 @@
   "checksum.copiedDesc": "SHA256 sağlama değeri panoya kopyalandı",
   "footer.buy": "Litecoin Satın Al",
   "footer.openSource": "Açık kaynak yazılım",
-  "footer.donate": "Geliştirmeye Bağış Yapın"
+  "footer.donate": "Geliştirmeye Bağış Yapın",
+  "mobile.nexusDescription": "Nexus Wallet ile Litecoin alın, satın ve ödeyin.",
+  "download.nexus.ios": "Download for iOS",
+  "download.nexus.android": "Download for Android"
 }

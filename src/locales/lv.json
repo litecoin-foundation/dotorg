@@ -16,5 +16,8 @@
   "checksum.copiedDesc": "SHA256 kontrolsumma nokopēta starpliktuvē",
   "footer.buy": "Pirkt Litecoin",
   "footer.openSource": "Atvērtā koda programmatūra",
-  "footer.donate": "Ziedot izstrādei"
+  "footer.donate": "Ziedot izstrādei",
+  "mobile.nexusDescription": "Pērciet, pārdodiet un maksājiet ar Litecoin, izmantojot Nexus Wallet.",
+  "download.nexus.ios": "Download for iOS",
+  "download.nexus.android": "Download for Android"
 }

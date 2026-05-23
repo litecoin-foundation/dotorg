@@ -16,5 +16,8 @@
   "checksum.copiedDesc": "Mã kiểm tra SHA256 đã được sao chép vào bộ nhớ tạm",
   "footer.buy": "Mua Litecoin",
   "footer.openSource": "Phần mềm mã nguồn mở",
-  "footer.donate": "Quyên góp cho phát triển"
+  "footer.donate": "Quyên góp cho phát triển",
+  "mobile.nexusDescription": "Mua, bán và thanh toán bằng Litecoin với Nexus Wallet.",
+  "download.nexus.ios": "Download for iOS",
+  "download.nexus.android": "Download for Android"
 }

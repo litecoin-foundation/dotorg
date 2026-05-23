@@ -16,5 +16,8 @@
   "checksum.copiedDesc": "SHA256 kontrollsumma kopeeriti lõikelauale",
   "footer.buy": "Osta Litecoini",
   "footer.openSource": "Avatud lähtekoodiga tarkvara",
-  "footer.donate": "Anneta arenduseks"
+  "footer.donate": "Anneta arenduseks",
+  "mobile.nexusDescription": "Osta, müü ja maksa Litecoiniga Nexus Wallet abil.",
+  "download.nexus.ios": "Download for iOS",
+  "download.nexus.android": "Download for Android"
 }

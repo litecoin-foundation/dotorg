@@ -16,5 +16,8 @@
   "checksum.copiedDesc": "SHA256 kontrolsumo kopiita al tondujo",
   "footer.buy": "Aĉeti Litecoin",
   "footer.openSource": "Malfermitkoda programaro",
-  "footer.donate": "Donaci al programado"
+  "footer.donate": "Donaci al programado",
+  "mobile.nexusDescription": "Aĉetu, vendu kaj pagu per Litecoin uzante Nexus Wallet.",
+  "download.nexus.ios": "Download for iOS",
+  "download.nexus.android": "Download for Android"
 }
