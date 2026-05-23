@@ -1,0 +1,20 @@
+{
+  "hero.tagline": "Litecoin 是一种数字货币，可实现全球即时、近乎零成本的支付。",
+  "hero.learnMore": "了解更多关于 Litecoin 的信息 →",
+  "tabs.core": "Litecoin Core",
+  "tabs.core.label": "高级",
+  "tabs.electrum": "Electrum-LTC",
+  "tabs.electrum.label": "简易",
+  "tabs.core.description": "全节点钱包，下载完整区块链以实现最高安全性并支持网络运行。",
+  "tabs.electrum.description": "轻量级钱包，通过信任外部服务器而非完整区块链来实现快速同步。",
+  "download.core": "下载 Litecoin Core {{version}}",
+  "download.electrum": "下载 Electrum-LTC {{version}}",
+  "download.otherPlatforms": "其他平台和系统",
+  "download.button": "下载",
+  "checksum.title": "SHA256 Checksum",
+  "checksum.copied": "校验值已复制",
+  "checksum.copiedDesc": "SHA256 校验值已复制到剪贴板",
+  "footer.buy": "购买 Litecoin",
+  "footer.openSource": "开源软件",
+  "footer.donate": "捐助开发"
+}

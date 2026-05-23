@@ -1,0 +1,20 @@
+{
+  "hero.tagline": "Litecoin is digitaal geld waarmee je overal ter wereld directe betalingen kunt doen tegen vrijwel geen kosten.",
+  "hero.learnMore": "Meer informatie over Litecoin →",
+  "tabs.core": "Litecoin Core",
+  "tabs.core.label": "Geavanceerd",
+  "tabs.electrum": "Electrum-LTC",
+  "tabs.electrum.label": "Eenvoudig",
+  "tabs.core.description": "Full-node-portemonnee die de volledige blockchain downloadt voor maximale beveiliging en netwerkondersteuning.",
+  "tabs.electrum.description": "Lichtgewicht portemonnee die snel synchroniseert door externe servers te vertrouwen in plaats van de volledige blockchain.",
+  "download.core": "Download Litecoin Core {{version}}",
+  "download.electrum": "Download Electrum-LTC {{version}}",
+  "download.otherPlatforms": "Andere platforms en systemen",
+  "download.button": "Downloaden",
+  "checksum.title": "SHA256 Checksum",
+  "checksum.copied": "Checksum gekopieerd",
+  "checksum.copiedDesc": "SHA256-checksum gekopieerd naar klembord",
+  "footer.buy": "Litecoin kopen",
+  "footer.openSource": "Opensourcesoftware",
+  "footer.donate": "Doneer aan ontwikkeling"
+}

@@ -1,0 +1,20 @@
+{
+  "hero.tagline": "Litecoin è una moneta digitale che consente pagamenti istantanei a costo quasi zero in tutto il mondo.",
+  "hero.learnMore": "Scopri di più su Litecoin →",
+  "tabs.core": "Litecoin Core",
+  "tabs.core.label": "Avanzato",
+  "tabs.electrum": "Electrum-LTC",
+  "tabs.electrum.label": "Semplice",
+  "tabs.core.description": "Portafoglio a nodo completo che scarica l'intera blockchain per la massima sicurezza e il supporto alla rete.",
+  "tabs.electrum.description": "Portafoglio leggero che si sincronizza rapidamente affidandosi a server esterni anziché all'intera blockchain.",
+  "download.core": "Scarica Litecoin Core {{version}}",
+  "download.electrum": "Scarica Electrum-LTC {{version}}",
+  "download.otherPlatforms": "Altre piattaforme e sistemi",
+  "download.button": "Scarica",
+  "checksum.title": "SHA256 Checksum",
+  "checksum.copied": "Checksum copiato",
+  "checksum.copiedDesc": "Checksum SHA256 copiato negli appunti",
+  "footer.buy": "Acquista Litecoin",
+  "footer.openSource": "Software open source",
+  "footer.donate": "Dona allo Sviluppo"
+}

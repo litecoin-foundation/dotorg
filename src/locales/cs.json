@@ -1,0 +1,20 @@
+{
+  "hero.tagline": "Litecoin je digitální měna umožňující okamžité platby po celém světě s téměř nulovými poplatky.",
+  "hero.learnMore": "Zjistěte více o Litecoin →",
+  "tabs.core": "Litecoin Core",
+  "tabs.core.label": "Pokročilý",
+  "tabs.electrum": "Electrum-LTC",
+  "tabs.electrum.label": "Jednoduchý",
+  "tabs.core.description": "Peněženka s úplným uzlem, která stahuje celý blockchain pro maximální bezpečnost a podporu sítě.",
+  "tabs.electrum.description": "Lehká peněženka, která se rychle synchronizuje pomocí externích serverů místo celého blockchainu.",
+  "download.core": "Stáhnout Litecoin Core {{version}}",
+  "download.electrum": "Stáhnout Electrum-LTC {{version}}",
+  "download.otherPlatforms": "Další platformy a systémy",
+  "download.button": "Stáhnout",
+  "checksum.title": "SHA256 Checksum",
+  "checksum.copied": "Kontrolní součet zkopírován",
+  "checksum.copiedDesc": "SHA256 kontrolní součet zkopírován do schránky",
+  "footer.buy": "Koupit Litecoin",
+  "footer.openSource": "Open source software",
+  "footer.donate": "Přispět na vývoj"
+}

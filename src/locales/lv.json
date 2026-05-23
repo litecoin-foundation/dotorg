@@ -1,0 +1,20 @@
+{
+  "hero.tagline": "Litecoin ir digitālā nauda, kas nodrošina tūlītējus maksājumus visā pasaulē par gandrīz nulles izmaksām.",
+  "hero.learnMore": "Uzzināt vairāk par Litecoin →",
+  "tabs.core": "Litecoin Core",
+  "tabs.core.label": "Pieredzējušiem",
+  "tabs.electrum": "Electrum-LTC",
+  "tabs.electrum.label": "Vienkāršs",
+  "tabs.core.description": "Pilna mezgla maciņš, kas lejupielādē visu blokķēdi, nodrošinot maksimālu drošību un tīkla atbalstu.",
+  "tabs.electrum.description": "Viegls maciņš, kas ātri sinhronizējas, izmantojot ārējos serverus, nevis pilnu blokķēdi.",
+  "download.core": "Lejupielādēt Litecoin Core {{version}}",
+  "download.electrum": "Lejupielādēt Electrum-LTC {{version}}",
+  "download.otherPlatforms": "Citas platformas un sistēmas",
+  "download.button": "Lejupielādēt",
+  "checksum.title": "SHA256 Checksum",
+  "checksum.copied": "Kontrolsumma nokopēta",
+  "checksum.copiedDesc": "SHA256 kontrolsumma nokopēta starpliktuvē",
+  "footer.buy": "Pirkt Litecoin",
+  "footer.openSource": "Atvērtā koda programmatūra",
+  "footer.donate": "Ziedot izstrādei"
+}

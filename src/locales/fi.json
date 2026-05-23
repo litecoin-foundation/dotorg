@@ -1,0 +1,20 @@
+{
+  "hero.tagline": "Litecoin on digitaalista rahaa, joka mahdollistaa välittömät ja lähes kuluttomat maksut kaikkialla maailmassa.",
+  "hero.learnMore": "Lue lisää Litecoinista →",
+  "tabs.core": "Litecoin Core",
+  "tabs.core.label": "Edistynyt",
+  "tabs.electrum": "Electrum-LTC",
+  "tabs.electrum.label": "Yksinkertainen",
+  "tabs.core.description": "Täyden solmun lompakko, joka lataa koko lohkoketjun maksimaalisen turvallisuuden ja verkon tukemisen takaamiseksi.",
+  "tabs.electrum.description": "Kevyt lompakko, joka synkronoituu nopeasti luottamalla ulkoisiin palvelimiin koko lohkoketjun sijaan.",
+  "download.core": "Lataa Litecoin Core {{version}}",
+  "download.electrum": "Lataa Electrum-LTC {{version}}",
+  "download.otherPlatforms": "Muut alustat ja järjestelmät",
+  "download.button": "Lataa",
+  "checksum.title": "SHA256 Checksum",
+  "checksum.copied": "Tarkistussumma kopioitu",
+  "checksum.copiedDesc": "SHA256-tarkistussumma kopioitu leikepöydälle",
+  "footer.buy": "Osta Litecoinia",
+  "footer.openSource": "Avoimen lähdekoodin ohjelmisto",
+  "footer.donate": "Lahjoita kehitykseen"
+}

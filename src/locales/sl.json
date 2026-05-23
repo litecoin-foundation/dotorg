@@ -1,0 +1,20 @@
+{
+  "hero.tagline": "Litecoin je digitalni denar, ki omogoča takojšnja plačila z zanemarljivimi stroški po vsem svetu.",
+  "hero.learnMore": "Več o Litecoin →",
+  "tabs.core": "Litecoin Core",
+  "tabs.core.label": "Napredno",
+  "tabs.electrum": "Electrum-LTC",
+  "tabs.electrum.label": "Preprosto",
+  "tabs.core.description": "Denarnica s polnim vozliščem, ki prenese celotno verigo blokov za največjo varnost in podporo omrežju.",
+  "tabs.electrum.description": "Lahka denarnica, ki se hitro sinhronizira z uporabo zunanjih strežnikov namesto celotne verige blokov.",
+  "download.core": "Prenesi Litecoin Core {{version}}",
+  "download.electrum": "Prenesi Electrum-LTC {{version}}",
+  "download.otherPlatforms": "Druge platforme in sistemi",
+  "download.button": "Prenesi",
+  "checksum.title": "SHA256 Checksum",
+  "checksum.copied": "Kontrolna vsota kopirana",
+  "checksum.copiedDesc": "Kontrolna vsota SHA256 kopirana v odložišče",
+  "footer.buy": "Kupi Litecoin",
+  "footer.openSource": "Odprtokodna programska oprema",
+  "footer.donate": "Doniraj za razvoj"
+}

@@ -1,0 +1,20 @@
+{
+  "hero.tagline": "Litecoin là tiền kỹ thuật số cho phép thanh toán tức thì trên toàn thế giới với chi phí gần như bằng không.",
+  "hero.learnMore": "Tìm hiểu thêm về Litecoin →",
+  "tabs.core": "Litecoin Core",
+  "tabs.core.label": "Nâng cao",
+  "tabs.electrum": "Electrum-LTC",
+  "tabs.electrum.label": "Đơn giản",
+  "tabs.core.description": "Ví nút đầy đủ tải xuống toàn bộ chuỗi khối để đảm bảo an ninh tối đa và hỗ trợ mạng lưới.",
+  "tabs.electrum.description": "Ví nhẹ đồng bộ nhanh chóng bằng cách sử dụng các máy chủ bên ngoài thay vì toàn bộ chuỗi khối.",
+  "download.core": "Tải xuống Litecoin Core {{version}}",
+  "download.electrum": "Tải xuống Electrum-LTC {{version}}",
+  "download.otherPlatforms": "Các nền tảng và hệ thống khác",
+  "download.button": "Tải xuống",
+  "checksum.title": "SHA256 Checksum",
+  "checksum.copied": "Đã sao chép mã kiểm tra",
+  "checksum.copiedDesc": "Mã kiểm tra SHA256 đã được sao chép vào bộ nhớ tạm",
+  "footer.buy": "Mua Litecoin",
+  "footer.openSource": "Phần mềm mã nguồn mở",
+  "footer.donate": "Quyên góp cho phát triển"
+}

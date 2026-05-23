@@ -1,0 +1,20 @@
+{
+  "hero.tagline": "Litecoin, dünya genelinde anlık ve neredeyse sıfır maliyetli ödemeler yapmanızı sağlayan dijital bir para birimidir.",
+  "hero.learnMore": "Litecoin hakkında daha fazla bilgi edinin →",
+  "tabs.core": "Litecoin Core",
+  "tabs.core.label": "Gelişmiş",
+  "tabs.electrum": "Electrum-LTC",
+  "tabs.electrum.label": "Basit",
+  "tabs.core.description": "En yüksek güvenlik ve ağ desteği için tüm blok zincirini indiren tam düğüm cüzdanıdır.",
+  "tabs.electrum.description": "Tam blok zinciri yerine harici sunuculara güvenerek hızlı senkronizasyon sağlayan hafif cüzdandır.",
+  "download.core": "Litecoin Core {{version}} İndir",
+  "download.electrum": "Electrum-LTC {{version}} İndir",
+  "download.otherPlatforms": "Diğer platformlar ve sistemler",
+  "download.button": "İndir",
+  "checksum.title": "SHA256 Checksum",
+  "checksum.copied": "Sağlama değeri kopyalandı",
+  "checksum.copiedDesc": "SHA256 sağlama değeri panoya kopyalandı",
+  "footer.buy": "Litecoin Satın Al",
+  "footer.openSource": "Açık kaynak yazılım",
+  "footer.donate": "Geliştirmeye Bağış Yapın"
+}

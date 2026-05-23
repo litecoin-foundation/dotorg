@@ -1,0 +1,20 @@
+{
+  "hero.tagline": "Litecoin on digitaalne raha, mis võimaldab koheseid ja peaaegu tasuta makseid üle kogu maailma.",
+  "hero.learnMore": "Loe Litecoini kohta lähemalt →",
+  "tabs.core": "Litecoin Core",
+  "tabs.core.label": "Täiustatud",
+  "tabs.electrum": "Electrum-LTC",
+  "tabs.electrum.label": "Lihtne",
+  "tabs.core.description": "Täissõlme rahakott, mis laadib alla kogu plokiahela maksimaalse turvalisuse ja võrgu toetamise tagamiseks.",
+  "tabs.electrum.description": "Kerge rahakott, mis sünkroniseerub kiiresti, usaldades väliseid servereid kogu plokiahela asemel.",
+  "download.core": "Laadi alla Litecoin Core {{version}}",
+  "download.electrum": "Laadi alla Electrum-LTC {{version}}",
+  "download.otherPlatforms": "Muud platvormid ja süsteemid",
+  "download.button": "Laadi alla",
+  "checksum.title": "SHA256 Checksum",
+  "checksum.copied": "Kontrollsumma kopeeritud",
+  "checksum.copiedDesc": "SHA256 kontrollsumma kopeeriti lõikelauale",
+  "footer.buy": "Osta Litecoini",
+  "footer.openSource": "Avatud lähtekoodiga tarkvara",
+  "footer.donate": "Anneta arenduseks"
+}

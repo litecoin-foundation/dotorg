@@ -1,0 +1,20 @@
+{
+  "hero.tagline": "Litecoin estas cifereca mono ebliganta tujajn, preskaŭ senkostajn pagojn tutmonde.",
+  "hero.learnMore": "Lernu pli pri Litecoin →",
+  "tabs.core": "Litecoin Core",
+  "tabs.core.label": "Progresinta",
+  "tabs.electrum": "Electrum-LTC",
+  "tabs.electrum.label": "Simpla",
+  "tabs.core.description": "Plennoda monujo kiu elŝutas la tutan blokĉenon por maksimuma sekureco kaj reto-subteno.",
+  "tabs.electrum.description": "Malpeza monujo kiu rapide sinkroniĝas fidante al eksteraj serviloj anstataŭ la tuta blokĉeno.",
+  "download.core": "Elŝuti Litecoin Core {{version}}",
+  "download.electrum": "Elŝuti Electrum-LTC {{version}}",
+  "download.otherPlatforms": "Aliaj platformoj kaj sistemoj",
+  "download.button": "Elŝuti",
+  "checksum.title": "SHA256 Checksum",
+  "checksum.copied": "Kontrolsumo kopiita",
+  "checksum.copiedDesc": "SHA256 kontrolsumo kopiita al tondujo",
+  "footer.buy": "Aĉeti Litecoin",
+  "footer.openSource": "Malfermitkoda programaro",
+  "footer.donate": "Donaci al programado"
+}

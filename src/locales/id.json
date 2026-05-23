@@ -1,0 +1,20 @@
+{
+  "hero.tagline": "Litecoin adalah uang digital yang memungkinkan pembayaran instan dengan biaya hampir nol ke seluruh dunia.",
+  "hero.learnMore": "Pelajari lebih lanjut tentang Litecoin →",
+  "tabs.core": "Litecoin Core",
+  "tabs.core.label": "Lanjutan",
+  "tabs.electrum": "Electrum-LTC",
+  "tabs.electrum.label": "Sederhana",
+  "tabs.core.description": "Dompet node penuh yang mengunduh seluruh blockchain untuk keamanan maksimal dan dukungan jaringan.",
+  "tabs.electrum.description": "Dompet ringan yang menyinkronkan dengan cepat dengan mempercayai server eksternal alih-alih seluruh blockchain.",
+  "download.core": "Unduh Litecoin Core {{version}}",
+  "download.electrum": "Unduh Electrum-LTC {{version}}",
+  "download.otherPlatforms": "Platform dan sistem lainnya",
+  "download.button": "Unduh",
+  "checksum.title": "SHA256 Checksum",
+  "checksum.copied": "Checksum disalin",
+  "checksum.copiedDesc": "Checksum SHA256 disalin ke papan klip",
+  "footer.buy": "Beli Litecoin",
+  "footer.openSource": "Perangkat lunak sumber terbuka",
+  "footer.donate": "Donasi untuk Pengembangan"
+}

@@ -1,0 +1,20 @@
+{
+  "hero.tagline": "Litecoin は、世界中で即時かつほぼ無料の決済を可能にするデジタル通貨です。",
+  "hero.learnMore": "Litecoin について詳しく見る →",
+  "tabs.core": "Litecoin Core",
+  "tabs.core.label": "上級者向け",
+  "tabs.electrum": "Electrum-LTC",
+  "tabs.electrum.label": "シンプル",
+  "tabs.core.description": "ブロックチェーン全体をダウンロードし、最高レベルのセキュリティとネットワーク維持を実現するフルノードウォレットです。",
+  "tabs.electrum.description": "完全なブロックチェーンの代わりに外部サーバーを利用し、素早く同期できる軽量ウォレットです。",
+  "download.core": "Litecoin Core {{version}} をダウンロード",
+  "download.electrum": "Electrum-LTC {{version}} をダウンロード",
+  "download.otherPlatforms": "その他のプラットフォームとシステム",
+  "download.button": "ダウンロード",
+  "checksum.title": "SHA256 Checksum",
+  "checksum.copied": "チェックサムをコピーしました",
+  "checksum.copiedDesc": "SHA256 チェックサムをクリップボードにコピーしました",
+  "footer.buy": "Litecoin を購入",
+  "footer.openSource": "オープンソースソフトウェア",
+  "footer.donate": "開発に寄付する"
+}

@@ -1,0 +1,20 @@
+{
+  "hero.tagline": "Litecoin to cyfrowa waluta umożliwiająca natychmiastowe płatności na całym świecie przy niemal zerowych kosztach.",
+  "hero.learnMore": "Dowiedz się więcej o Litecoin →",
+  "tabs.core": "Litecoin Core",
+  "tabs.core.label": "Zaawansowany",
+  "tabs.electrum": "Electrum-LTC",
+  "tabs.electrum.label": "Prosty",
+  "tabs.core.description": "Portfel pełnego węzła, który pobiera cały łańcuch bloków, zapewniając maksymalne bezpieczeństwo i wsparcie sieci.",
+  "tabs.electrum.description": "Lekki portfel, który szybko się synchronizuje, korzystając z zewnętrznych serwerów zamiast pełnego łańcucha bloków.",
+  "download.core": "Pobierz Litecoin Core {{version}}",
+  "download.electrum": "Pobierz Electrum-LTC {{version}}",
+  "download.otherPlatforms": "Inne platformy i systemy",
+  "download.button": "Pobierz",
+  "checksum.title": "SHA256 Checksum",
+  "checksum.copied": "Suma kontrolna skopiowana",
+  "checksum.copiedDesc": "Suma kontrolna SHA256 skopiowana do schowka",
+  "footer.buy": "Kup Litecoin",
+  "footer.openSource": "Oprogramowanie o otwartym kodzie źródłowym",
+  "footer.donate": "Wspomóż rozwój"
+}

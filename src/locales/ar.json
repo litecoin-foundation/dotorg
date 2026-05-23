@@ -1,0 +1,20 @@
+{
+  "hero.tagline": "Litecoin هي عملة رقمية تتيح إجراء مدفوعات فورية وبتكلفة شبه معدومة حول العالم.",
+  "hero.learnMore": "تعرّف على المزيد حول Litecoin ←",
+  "tabs.core": "Litecoin Core",
+  "tabs.core.label": "متقدّم",
+  "tabs.electrum": "Electrum-LTC",
+  "tabs.electrum.label": "بسيط",
+  "tabs.core.description": "محفظة عقدة كاملة تقوم بتنزيل سلسلة الكتل بالكامل لتوفير أقصى درجات الأمان ودعم الشبكة.",
+  "tabs.electrum.description": "محفظة خفيفة تتزامن بسرعة عبر الاعتماد على خوادم خارجية بدلاً من سلسلة الكتل الكاملة.",
+  "download.core": "تنزيل Litecoin Core {{version}}",
+  "download.electrum": "تنزيل Electrum-LTC {{version}}",
+  "download.otherPlatforms": "منصات وأنظمة أخرى",
+  "download.button": "تنزيل",
+  "checksum.title": "SHA256 Checksum",
+  "checksum.copied": "تم نسخ قيمة التحقق",
+  "checksum.copiedDesc": "تم نسخ قيمة التحقق SHA256 إلى الحافظة",
+  "footer.buy": "شراء Litecoin",
+  "footer.openSource": "برنامج مفتوح المصدر",
+  "footer.donate": "تبرّع لدعم التطوير"
+}

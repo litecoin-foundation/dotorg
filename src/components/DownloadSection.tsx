@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -32,6 +33,7 @@ interface DownloadSectionProps {
 const DownloadSection = ({ nodeType }: DownloadSectionProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const { toast } = useToast();
+  const { t } = useTranslation();
 
   const litecoinCoreDownloads: DownloadInfo[] = [
     {
@@ -144,15 +146,15 @@ const DownloadSection = ({ nodeType }: DownloadSectionProps) => {
   const copyChecksum = (checksum: string) => {
     navigator.clipboard.writeText(checksum);
     toast({
-      title: "Checksum copied",
-      description: "SHA256 checksum copied to clipboard",
+      title: t("checksum.copied"),
+      description: t("checksum.copiedDesc"),
     });
   };
 
   const downloadButtonText =
     nodeType === "full-node"
-      ? `Download Litecoin Core ${primaryDownload.version}`
-      : `Download Electrum-LTC ${primaryDownload.version}`;
+      ? t("download.core", { version: primaryDownload.version })
+      : t("download.electrum", { version: primaryDownload.version });
 
   return (
     <div className="space-y-6">
@@ -163,7 +165,7 @@ const DownloadSection = ({ nodeType }: DownloadSectionProps) => {
             size="lg"
             className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold glow-effect transition-all duration-300 hover:scale-105"
           >
-            <Download className="mr-2 h-5 w-5" />
+            <Download className="me-2 h-5 w-5" />
             {downloadButtonText}
           </Button>
         </a>
@@ -186,7 +188,7 @@ const DownloadSection = ({ nodeType }: DownloadSectionProps) => {
               <div className="space-y-3">
                 <div className="flex items-center gap-2">
                   <Shield className="h-4 w-4 text-accent" />
-                  <span className="text-sm font-medium">SHA256 Checksum</span>
+                  <span className="text-sm font-medium">{t("checksum.title")}</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <code className="text-xs break-all bg-navy/50 p-2 rounded flex-1">
@@ -215,9 +217,9 @@ const DownloadSection = ({ nodeType }: DownloadSectionProps) => {
             className="w-full text-light-grey hover:bg-navy/50"
           >
             <ChevronDown
-              className={`mr-2 h-4 w-4 transition-transform ${isExpanded ? "rotate-180" : ""}`}
+              className={`me-2 h-4 w-4 transition-transform ${isExpanded ? "rotate-180" : ""}`}
             />
-            Other platforms and systems
+            {t("download.otherPlatforms")}
           </Button>
         </CollapsibleTrigger>
 
@@ -257,7 +259,7 @@ const DownloadSection = ({ nodeType }: DownloadSectionProps) => {
                             <div className="flex items-center gap-2">
                               <Shield className="h-4 w-4 text-accent" />
                               <span className="text-sm font-medium">
-                                SHA256 Checksum
+                                {t("checksum.title")}
                               </span>
                             </div>
                             <div className="flex items-center gap-2">
@@ -284,8 +286,8 @@ const DownloadSection = ({ nodeType }: DownloadSectionProps) => {
                       variant="outline"
                       className="border-light-grey/30 text-light-grey hover:bg-light-grey/10"
                     >
-                      <Download className="h-4 w-4 mr-1" />
-                      Download
+                      <Download className="h-4 w-4 me-1" />
+                      {t("download.button")}
                     </Button>
                   </a>
                 </div>

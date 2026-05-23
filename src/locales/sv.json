@@ -1,0 +1,20 @@
+{
+  "hero.tagline": "Litecoin är digitala pengar som möjliggör omedelbara betalningar världen över till nästan ingen kostnad.",
+  "hero.learnMore": "Läs mer om Litecoin →",
+  "tabs.core": "Litecoin Core",
+  "tabs.core.label": "Avancerad",
+  "tabs.electrum": "Electrum-LTC",
+  "tabs.electrum.label": "Enkel",
+  "tabs.core.description": "Fullnodplånbok som laddar ner hela blockkedjan för maximal säkerhet och nätverksstöd.",
+  "tabs.electrum.description": "Lättviktsplånbok som synkroniserar snabbt genom att använda externa servrar istället för hela blockkedjan.",
+  "download.core": "Ladda ner Litecoin Core {{version}}",
+  "download.electrum": "Ladda ner Electrum-LTC {{version}}",
+  "download.otherPlatforms": "Andra plattformar och system",
+  "download.button": "Ladda ner",
+  "checksum.title": "SHA256 Checksum",
+  "checksum.copied": "Kontrollsumma kopierad",
+  "checksum.copiedDesc": "SHA256-kontrollsumma kopierad till urklipp",
+  "footer.buy": "Köp Litecoin",
+  "footer.openSource": "Programvara med öppen källkod",
+  "footer.donate": "Donera till utveckling"
+}

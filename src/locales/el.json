@@ -1,0 +1,20 @@
+{
+  "hero.tagline": "Το Litecoin είναι ένα ψηφιακό νόμισμα που επιτρέπει άμεσες πληρωμές παγκοσμίως με σχεδόν μηδενικό κόστος.",
+  "hero.learnMore": "Μάθετε περισσότερα για το Litecoin →",
+  "tabs.core": "Litecoin Core",
+  "tabs.core.label": "Προηγμένο",
+  "tabs.electrum": "Electrum-LTC",
+  "tabs.electrum.label": "Απλό",
+  "tabs.core.description": "Πορτοφόλι πλήρους κόμβου που κατεβάζει ολόκληρο το blockchain για μέγιστη ασφάλεια και υποστήριξη δικτύου.",
+  "tabs.electrum.description": "Ελαφρύ πορτοφόλι που συγχρονίζεται γρήγορα χρησιμοποιώντας εξωτερικούς διακομιστές αντί ολόκληρου του blockchain.",
+  "download.core": "Λήψη Litecoin Core {{version}}",
+  "download.electrum": "Λήψη Electrum-LTC {{version}}",
+  "download.otherPlatforms": "Άλλες πλατφόρμες και συστήματα",
+  "download.button": "Λήψη",
+  "checksum.title": "SHA256 Checksum",
+  "checksum.copied": "Το checksum αντιγράφηκε",
+  "checksum.copiedDesc": "Το SHA256 checksum αντιγράφηκε στο πρόχειρο",
+  "footer.buy": "Αγορά Litecoin",
+  "footer.openSource": "Λογισμικό ανοιχτού κώδικα",
+  "footer.donate": "Δωρεά για την ανάπτυξη"
+}

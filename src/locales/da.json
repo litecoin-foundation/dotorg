@@ -1,0 +1,20 @@
+{
+  "hero.tagline": "Litecoin er en digital valuta, der muliggør øjeblikkelige betalinger verden over til næsten ingen omkostninger.",
+  "hero.learnMore": "Lær mere om Litecoin →",
+  "tabs.core": "Litecoin Core",
+  "tabs.core.label": "Avanceret",
+  "tabs.electrum": "Electrum-LTC",
+  "tabs.electrum.label": "Enkel",
+  "tabs.core.description": "Fuld node-tegnebog, der downloader hele blockchainen for maksimal sikkerhed og netværksunderstøttelse.",
+  "tabs.electrum.description": "Let tegnebog, der synkroniserer hurtigt ved at bruge eksterne servere i stedet for hele blockchainen.",
+  "download.core": "Download Litecoin Core {{version}}",
+  "download.electrum": "Download Electrum-LTC {{version}}",
+  "download.otherPlatforms": "Andre platforme og systemer",
+  "download.button": "Download",
+  "checksum.title": "SHA256 Checksum",
+  "checksum.copied": "Checksum kopieret",
+  "checksum.copiedDesc": "SHA256 checksum kopieret til udklipsholder",
+  "footer.buy": "Køb Litecoin",
+  "footer.openSource": "Open source-software",
+  "footer.donate": "Donér til udvikling"
+}

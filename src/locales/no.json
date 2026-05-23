@@ -1,0 +1,20 @@
+{
+  "hero.tagline": "Litecoin er digitale penger som muliggjør umiddelbare betalinger over hele verden til nesten ingen kostnad.",
+  "hero.learnMore": "Lær mer om Litecoin →",
+  "tabs.core": "Litecoin Core",
+  "tabs.core.label": "Avansert",
+  "tabs.electrum": "Electrum-LTC",
+  "tabs.electrum.label": "Enkel",
+  "tabs.core.description": "Fullnode-lommebok som laster ned hele blokkjeden for maksimal sikkerhet og nettverksstøtte.",
+  "tabs.electrum.description": "Lettvekts lommebok som synkroniserer raskt ved å bruke eksterne servere i stedet for hele blokkjeden.",
+  "download.core": "Last ned Litecoin Core {{version}}",
+  "download.electrum": "Last ned Electrum-LTC {{version}}",
+  "download.otherPlatforms": "Andre plattformer og systemer",
+  "download.button": "Last ned",
+  "checksum.title": "SHA256 Checksum",
+  "checksum.copied": "Sjekksum kopiert",
+  "checksum.copiedDesc": "SHA256-sjekksum kopiert til utklippstavlen",
+  "footer.buy": "Kjøp Litecoin",
+  "footer.openSource": "Åpen kildekode-programvare",
+  "footer.donate": "Doner til utvikling"
+}

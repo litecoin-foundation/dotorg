@@ -1,0 +1,20 @@
+{
+  "hero.tagline": "Litecoin은 전 세계 어디서나 즉각적이고 거의 무료에 가까운 결제를 가능하게 하는 디지털 화폐입니다.",
+  "hero.learnMore": "Litecoin에 대해 자세히 알아보기 →",
+  "tabs.core": "Litecoin Core",
+  "tabs.core.label": "고급",
+  "tabs.electrum": "Electrum-LTC",
+  "tabs.electrum.label": "간편",
+  "tabs.core.description": "전체 블록체인을 다운로드하여 최고 수준의 보안과 네트워크 지원을 제공하는 풀 노드 지갑입니다.",
+  "tabs.electrum.description": "전체 블록체인 대신 외부 서버를 이용해 빠르게 동기화하는 경량 지갑입니다.",
+  "download.core": "Litecoin Core {{version}} 다운로드",
+  "download.electrum": "Electrum-LTC {{version}} 다운로드",
+  "download.otherPlatforms": "다른 플랫폼 및 시스템",
+  "download.button": "다운로드",
+  "checksum.title": "SHA256 Checksum",
+  "checksum.copied": "체크섬 복사됨",
+  "checksum.copiedDesc": "SHA256 체크섬이 클립보드에 복사되었습니다",
+  "footer.buy": "Litecoin 구매",
+  "footer.openSource": "오픈 소스 소프트웨어",
+  "footer.donate": "개발에 기부하기"
+}
