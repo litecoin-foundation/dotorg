@@ -9,40 +9,40 @@ export interface DownloadInfo {
 
 export const litecoinCoreDownloads: DownloadInfo[] = [
   {
-    version: "0.21.5.6",
+    version: "0.21.5.8",
     platform: "Windows 64-bit",
     size: "19.1 MB",
-    filename: "litecoin-0.21.5.6-win64-setup.exe",
+    filename: "litecoin-0.21.5.8-win64-setup.exe",
     checksum:
-      "b89401cf3696ab3f262ce20c476d59a9cf093292564ff3f7d70c0ab9fdaef010",
-    url: "https://download.litecoin.org/litecoin-0.21.5.6/win/litecoin-0.21.5.6-win64-setup.exe",
+      "788671ceef824b8939cd4f7913def63098c6caacf93e5e8d03c215780c905f0f",
+    url: "https://download.litecoin.org/litecoin-0.21.5.8/win/litecoin-0.21.5.8-win64-setup.exe",
   },
   {
-    version: "0.21.5.6",
+    version: "0.21.5.8",
     platform: "macOS",
-    size: "14.5 MB",
-    filename: "litecoin-0.21.5.6-osx.dmg",
+    size: "14.6 MB",
+    filename: "litecoin-0.21.5.8-osx.dmg",
     checksum:
-      "8eae361597a1698d61bac73e89d6aed8a32578db24be5e42958a583d7abf7276",
-    url: "https://download.litecoin.org/litecoin-0.21.5.6/osx/litecoin-0.21.5.6-osx.dmg",
+      "6ea3b94379be34239a521b410260dc92b1fed0e436c2ffb1b72a5065ed5db5c1",
+    url: "https://download.litecoin.org/litecoin-0.21.5.8/osx/litecoin-0.21.5.8-osx.dmg",
   },
   {
-    version: "0.21.5.6",
+    version: "0.21.5.8",
     platform: "Linux 64-bit",
-    size: "36.8 MB",
-    filename: "litecoin-0.21.5.6-x86_64-linux-gnu.tar.gz",
+    size: "37 MB",
+    filename: "litecoin-0.21.5.8-x86_64-linux-gnu.tar.gz",
     checksum:
-      "3c0a217651a431ef446641669a0b74ce7dbcd9b9ed1a118fc830b8f6779ee83f",
-    url: "https://download.litecoin.org/litecoin-0.21.5.6/linux/litecoin-0.21.5.6-x86_64-linux-gnu.tar.gz",
+      "43200c9f9d65ebc126ea5833ca9429e144c4b3273da6bb9f4e89fd7450ab1be9",
+    url: "https://download.litecoin.org/litecoin-0.21.5.8/linux/litecoin-0.21.5.8-x86_64-linux-gnu.tar.gz",
   },
   {
-    version: "0.21.5.6",
+    version: "0.21.5.8",
     platform: "Linux ARM64",
-    size: "35.5 MB",
-    filename: "litecoin-0.21.5.6-aarch64-linux-gnu.tar.gz",
+    size: "35.7 MB",
+    filename: "litecoin-0.21.5.8-aarch64-linux-gnu.tar.gz",
     checksum:
-      "81c3ca2a7fcbccaabaf0a0ea2022f1990787f0cc1937aaad4dcc61d2856799a8",
-    url: "https://download.litecoin.org/litecoin-0.21.5.6/linux/litecoin-0.21.5.6-aarch64-linux-gnu.tar.gz",
+      "129f55defb9045d5635566382c7b9f6fd227d4106a6fc07847a38b25ff9b29a1",
+    url: "https://download.litecoin.org/litecoin-0.21.5.8/linux/litecoin-0.21.5.8-aarch64-linux-gnu.tar.gz",
   },
 ];
 
