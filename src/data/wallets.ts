@@ -53,7 +53,7 @@ export const electrumLTCDownloads: DownloadInfo[] = [
     size: "28.5 MB",
     filename: "electrum-ltc-4.2.2.1-setup.exe",
     checksum:
-      "e1f2a3b4c5d6e7f8d89a5b5a1d5c8e4f2a3b8c7d6e9f0a1b2c3d4e5f6a7b8c9d0",
+      "ec0f70cce98f4b1dbef051dc43cd1726fd74f3f9aa030a8961bda37237c517d0",
     url: "https://electrum-ltc.org/download/electrum-ltc-4.2.2.1-setup.exe",
   },
   {
@@ -62,7 +62,7 @@ export const electrumLTCDownloads: DownloadInfo[] = [
     size: "26.7 MB",
     filename: "electrum-ltc-4.2.2.1.dmg",
     checksum:
-      "f2a3b4c5d6e7f8d89a5b5a1d5c8e4f2a3b8c7d6e9f0a1b2c3d4e5f6a7b8c9d0e1",
+      "dc71b45bc9cb965578cb819e5c68b027ed80002e5f86195b85259a009fe24373",
     url: "https://electrum-ltc.org/download/electrum-ltc-4.2.2.1.dmg",
   },
   {
@@ -71,7 +71,7 @@ export const electrumLTCDownloads: DownloadInfo[] = [
     size: "27.2 MB",
     filename: "electrum-ltc-4.2.2.1-x86_64.AppImage",
     checksum:
-      "a3b4c5d6e7f8d89a5b5a1d5c8e4f2a3b8c7d6e9f0a1b2c3d4e5f6a7b8c9d0e1f2",
+      "8c27621f87a51baf5b3a492696606a5b55c72b6a9804e3baa8f161cd7cc5d8f5",
     url: "https://electrum-ltc.org/download/electrum-ltc-4.2.2.1-x86_64.AppImage",
   },
 ];
